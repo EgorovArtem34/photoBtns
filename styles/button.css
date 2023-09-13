@@ -1,0 +1,96 @@
+.button {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  cursor: pointer;
+  /* border-radius: 50%; */
+  border-radius: 40px;
+  border: none;
+  background-color: transparent;
+  border: none;
+}
+
+.button.active {
+  display: flex;
+  width: auto;
+  height: auto;
+  padding: 11px 15px;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+}
+
+.button.active.bg-green {
+  border: 1px solid #6abf4b;
+  background-color: #6abf4b;
+}
+.button.active.bg-blue {
+  border: 1px solid #3877ee;
+  background-color: #3877ee;
+}
+
+.button.green {
+  color: #6abf4b;
+}
+
+.button.blue {
+  color: #3877ee;
+}
+
+
+.livingHouse {
+  top: 28%;
+  left: 30%;
+}
+
+.stadium {
+  top: 45%;
+  left: 35%;
+}
+
+.bridge {
+  top: 66%;
+  left: 24%;
+}
+
+.redWhiteHouse {
+  top: 21%;
+  left: 72%;
+}
+
+.arch {
+  top: 37%;
+  left: 60%;
+}
+
+.pillar {
+  top: 59%;
+  left: 56%;
+}
+
+.buffet {
+  top: 44%;
+  left: 74%;
+}
+
+.library {
+  top: 62%;
+  left: 68%;
+}
+
+.deansOffice {
+  top: 64%;
+  left: 83%;
+}
+
+.roof {
+  top: 73%;
+  left: 58%;
+}

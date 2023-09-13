@@ -1,12 +1,4 @@
-:root {
-  --panel-light: #ffffff;
-  --panel-dark: #212331;
-  --background-dark: #100e1c;
-  --gray: #48484a;
-  --hint: #acacac;
-  --dark-hint: #6d6d6d;
-  --light-gray: #e6e6e6;
-}
+@import 'button.css';
 
 * {
   box-sizing: border-box;
@@ -24,74 +16,4 @@
   position: relative;
   width: 100vw;
   height: auto;
-}
-
-.button {
-  position: absolute;
-  cursor: pointer;
-  width: 41px;
-  height: 41px;
-  border-radius: 50%;
-  border: none;
-  background-color: transparent;
-  border: none;
-  font-size: 10px;
-}
-
-.button.green {
-  color: #6abf4b;
-}
-
-.button.blue {
-  background-color: #3877ee;
-}
-
-.livingHouse {
-  top: 28%;
-  left: 30%;
-}
-
-.stadium {
-  top: 45%;
-  left: 35%;
-}
-
-.bridge {
-  top: 66%;
-  left: 24%;
-}
-
-.redWhiteHouse {
-  top: 21%;
-  left: 72%;
-}
-
-.arch {
-  top: 37%;
-  left: 60%;
-}
-
-.pillar {
-  top: 59%;
-  left: 56%;
-}
-
-.buffet {
-  top: 44%;
-  left: 74%;
-}
-
-.library {
-  top: 62%;
-  left: 68%;
-}
-
-.deansOffice {
-  top: 64%;
-  left: 83%;
-}
-
-.roof {
-  top: 73%;
-  left: 58%;
 }
