@@ -81,6 +81,7 @@ const activeBtnSvg = `<svg width="10" height="2" viewBox="0 0 10 2" fill="white"
 <path d="M0 1H10" stroke="white" stroke-width="2"/>
 </svg>`;
 const btns = document.querySelector(".btns");
+const container = document.querySelector(".container-image");
 
 const createBtns = () => {
   btns.innerHTML = "";
@@ -104,15 +105,26 @@ const createBtns = () => {
 
 const setActiveBtn = (currentId) => {
   btnsData.forEach((btn) => {
-    btn.isActive = btn.id === currentId ? !btn.isActive : false;
+    if (btn.id === currentId) {
+      btn.isActive = !btn.isActive;
+    }
   });
 };
+const resetAllBtns = () => {
+  btnsData.forEach((btn) => {
+    btn.isActive = false;
+  });
+}
 
-btns.addEventListener("click", (e) => {
-  const closestBtn = e.target.closest("button");
-  console.log("eeee", e.target, closestBtn);
-  const closestBtnId = closestBtn.getAttribute("data-id");
-  setActiveBtn(+closestBtnId);
+container.addEventListener("click", (e) => {
+  console.log(e.target.getAttribute('data-id') === 'image')
+  if (e.target.getAttribute('data-id') === 'image') {
+    resetAllBtns();
+  } else {
+    const closestBtn = e.target.closest("button");
+    const closestBtnId = closestBtn.getAttribute("data-id");
+    setActiveBtn(+closestBtnId);
+  }
   createBtns();
 });
 
