@@ -1,4 +1,4 @@
-export const btnsData = [
+const btnsData = [
   {
     id: 1,
     position: "livingHouse",
@@ -117,7 +117,6 @@ const resetAllBtns = () => {
 }
 
 container.addEventListener("click", (e) => {
-  console.log(e.target.getAttribute('data-id') === 'image')
   if (e.target.getAttribute('data-id') === 'image') {
     resetAllBtns();
   } else {
